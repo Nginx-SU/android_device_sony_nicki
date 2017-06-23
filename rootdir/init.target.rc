@@ -38,6 +38,9 @@ on init
 
 on fs
     mount_all fstab.qcom
+
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
     swapon_all fstab.qcom
 
     wait /dev/block/platform/msm_sdcc.1/by-name/persist
@@ -112,7 +115,6 @@ on boot
     chown system system /sys/class/input/input4/axi
     chown system system /sys/class/input/input4/count
     chown system system /sys/class/input/input4/selftest
-
 
     chown system system /sys/class/input/input5/bandwidth
     chown system system /sys/class/input/input5/debug
