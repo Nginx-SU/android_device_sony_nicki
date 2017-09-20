@@ -32,10 +32,11 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+#include <android-base/properties.h>
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
+
+using android::base::GetProperty;
 
 #define MODELNUMBER "/proc/modelnumber"
 #define BUF_SIZE         64
@@ -104,6 +105,6 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "Sony/C2004/C2004:4.3/15.5.A.1.5/eng.user.20140430.172301:user/release-keys");
     };
 
-    device = property_get("ro.product.device");
+    device = GetProperty("ro.product.device");
     ERROR("setting build properties for %s device\n", device.c_str());
 }
