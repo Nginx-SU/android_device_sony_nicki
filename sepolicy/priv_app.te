@@ -1,2 +1,1 @@
 allow priv_app baseband_prop:file read;
-allowxperm priv_app self:udp_socket ioctl { SIOCGIWESSID };
