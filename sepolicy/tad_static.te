@@ -4,10 +4,7 @@ type tad_static_exec, exec_type, file_type;
 init_daemon_domain(tad_static)
 
 allow tad_static block_device:dir { search };
-allow tad proc:file { open read };
-allow tad properties_device:dir { open read };
 allow tad_static root_block_device:blk_file { ioctl open read write };
 allow tad_static rootfs:file { entrypoint read };
 allow tad_static dbgcfgtool_device:chr_file { ioctl open read write };
-allow tad trim_area_partition_device:blk_file { ioctl open read write };
 
