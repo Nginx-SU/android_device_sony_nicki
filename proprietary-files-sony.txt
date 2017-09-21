@@ -78,3 +78,6 @@ etc/firmware/tzsuntory.b02
 etc/firmware/tzsuntory.b03
 etc/firmware/tzsuntory.flist
 etc/firmware/tzsuntory.mdt
+
+#STLport
+vendor/lib/libstlport.so
