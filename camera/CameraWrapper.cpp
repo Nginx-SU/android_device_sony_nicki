@@ -116,7 +116,7 @@ static int check_vendor_module()
     int rv = 0;
     ALOGV("%s", __FUNCTION__);
 
-    if (gVendorModule)
+    if (gVendorModule) {
 	ALOGV("%s: already got vendor camera module", __FUNCTION__);
         return 0;
 }
