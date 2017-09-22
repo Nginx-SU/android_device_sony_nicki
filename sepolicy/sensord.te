@@ -1,6 +1,5 @@
 type sensord, domain;
 type sensord_exec, exec_type, file_type;
-
 init_daemon_domain(sensord)
 
 type_transition sensord system_data_file:{ dir file } sensord_data_file;

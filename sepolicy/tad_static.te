@@ -6,5 +6,4 @@ init_daemon_domain(tad_static)
 allow tad_static block_device:dir { search };
 allow tad_static root_block_device:blk_file { ioctl open read write };
 allow tad_static rootfs:file { entrypoint read };
-allow tad_static dbgcfgtool_device:chr_file { read write ioctl open };
-
+allow tad_static dbgcfgtool_device:chr_file { ioctl open read write };
