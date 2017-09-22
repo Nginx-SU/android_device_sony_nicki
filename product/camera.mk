@@ -4,8 +4,7 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     camera.qcom \
     libshim_camera \
-    OpenCamera
-#    Camera2
+    Snap
 
 # Camera SHIM packages
 PRODUCT_PACKAGES += \
