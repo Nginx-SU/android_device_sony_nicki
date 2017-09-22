@@ -36,6 +36,8 @@ on init
 
     export LD_PRELOAD "libsony.so"
 
+    # Symbols required for camera blobs
+export LD_SHIM_LIBS "/system/lib/libcald_pal.so|libshim_cald.so:/system/lib/hw/camera.vendor.qcom.so|libshim_camera.so"
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
