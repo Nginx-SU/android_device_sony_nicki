@@ -1,4 +1,8 @@
 allow init tmpfs:lnk_file create_file_perms;
 allow init self:socket { read bind create write };
+allow init self:socket ioctl;
 allow init socket_device:sock_file { create write setattr unlink };
+allow init root_block_device:blk_file write;
+allow init qmuxd:unix_stream_socket connectto;
 allow init kcal_sysfs:file getattr;
+allowxperm init self:socket ioctl msm_sock_ipc_ioctls;

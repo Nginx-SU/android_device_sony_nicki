@@ -8,3 +8,5 @@ allow system_server led_deamon_data_file:fifo_file rw_file_perms;
 allow system_server baseband_prop:file read;
 
 allow system_server sysfs_thermal:file r_file_perms;
+
+qmux_socket(system_server)
