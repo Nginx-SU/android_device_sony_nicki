@@ -271,6 +271,7 @@ service ta_qmi_service /system/bin/ta_qmi_service
     class late_start
     user root
     disabled
+    seclabel u:r:ta_qmi_service:s0
 
 service tad /sbin/tad_static /dev/block/mmcblk0 1,16
     class trimarea

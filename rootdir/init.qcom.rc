@@ -225,6 +225,7 @@ service irsc_util /system/bin/irsc_util "/etc/sec_config"
     class main
     user root
     oneshot
+    seclabel u:r:irsc_util:s0
 
 service rmt_storage /system/bin/rmt_storage
     class core
@@ -237,7 +238,7 @@ service config_bt_addr /system/bin/btnvtool -O
     group bluetooth radio
     oneshot
 
-service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
+service hci_attach /system/bin/sh /system/etc/init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth
@@ -245,7 +246,7 @@ service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     oneshot
 
 on property:bluetooth.hciattach=true
-    start hciattach
+    start hci_attach
 
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
