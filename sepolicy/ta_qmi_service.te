@@ -9,6 +9,5 @@ allow ta_qmi_service sysfs_wake_lock:file { append open };
 allow ta_qmi_service self:socket { create bind read write setopt };
 allow ta_qmi_service self:socket ioctl;
 allow ta_qmi_service self:capability { dac_override };
-allowxperm ta_qmi_service self:socket ioctl msm_sock_ipc_ioctls;
 
 

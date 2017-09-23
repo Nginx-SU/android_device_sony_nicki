@@ -8,4 +8,3 @@ allow mm-qcamerad audio_device:chr_file rw_file_perms;
 allow mm-qcamerad mpctl_socket:dir search;
 allow mm-qcamerad mpctl_socket:sock_file write;
 allow mm-qcamerad mpdecision:unix_stream_socket connectto;
-allowxperm mm-qcamerad mpctl:socket ioctl msm_sock_ipc_ioctls;

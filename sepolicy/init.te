@@ -5,4 +5,3 @@ allow init socket_device:sock_file { create write setattr unlink };
 allow init root_block_device:blk_file write;
 allow init qmuxd:unix_stream_socket connectto;
 allow init kcal_sysfs:file getattr;
-allowxperm init self:socket ioctl msm_sock_ipc_ioctls;
