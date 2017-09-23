@@ -33,16 +33,15 @@
 #include <unistd.h>
 
 #include <android-base/properties.h>
-#include "log.h"
 #include "vendor_init.h"
-#include "util.h"
 #include "property_service.h"
+#include "log.h"
+#include "util.h"
 
 #define MODELNUMBER "/proc/modelnumber"
 #define BUF_SIZE         64
 #define STRCONV_(x)      #x
 #define STRCONV(x)       "%" STRCONV_(x) "s"
-
 static char tmp[BUF_SIZE];
 
 void ds_properties();
