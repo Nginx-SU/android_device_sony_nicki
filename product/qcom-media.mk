@@ -18,8 +18,13 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libstagefrighthw
 
+# OMX properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.media.treble_omx=false
+
 # DRM packages
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
     com.google.widevine.software.drm
 
 # DRM properties
