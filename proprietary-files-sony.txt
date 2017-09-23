@@ -52,7 +52,7 @@ lib/hw/nfc.msm8960.so
 
 # Sensors
 bin/sensord
-lib/hw/sensors.default.so
+lib/hw/sensors.default.so:lib/sensors.nicki.so
 
 # TA
 bin/taimport

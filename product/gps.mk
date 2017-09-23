@@ -9,6 +9,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.izat.service_mask=0x5 \
     ro.gps.agps_provider=1
 
-# GNSS HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl
