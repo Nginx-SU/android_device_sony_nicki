@@ -211,6 +211,9 @@ on boot
     restorecon /sys/class/timed_output/vibrator/level
     restorecon /sys/class/graphics/fb0/kcal
 
+# Wifi firmware reload path
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
 on post-fs-data
    mkdir /tombstones/modem 0771 system system
    mkdir /tombstones/lpass 0771 system system
@@ -272,13 +275,13 @@ service ta_qmi_service /system/bin/ta_qmi_service
     user root
     disabled
 
-service tad /sbin/tad_static /dev/block/mmcblk0 1,16
-    class trimarea
-    user root
-    group root 	
-    socket tad stream 666 system system
-    class core
-    seclabel u:r:tad_static:s0
+#service tad /sbin/tad_static /dev/block/mmcblk0 1,16
+    #class trimarea
+    #user root
+    #group root 	
+    #socket tad stream 666 system system
+    #class core
+    #seclabel u:r:tad_static:s0
 
 service updatemiscta /system/bin/updatemiscta
     class main
@@ -291,8 +294,8 @@ service wcnss-service /system/bin/wcnss_service
     group system wifi
     oneshot
 
-service bbset /system/bin/sh /system/etc/init.qcom.baseband.sh
-     class late_start
-     user root
-     seclabel u:r:qti_init_shell:s0
-     oneshot
+#service bbset /system/bin/sh /system/etc/init.qcom.baseband.sh
+     #class late_start
+     #user root
+     #seclabel u:r:qti_init_shell:s0
+     #oneshot

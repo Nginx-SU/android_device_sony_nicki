@@ -32,3 +32,6 @@ include $(LOCAL_PATH)/product/*.mk
 
 # Vendor product configurations
 $(call inherit-product, vendor/sony/nicki/nicki-vendor.mk)
+
+# Vendor Interface Manifest
+DEVICE_MANIFEST_FILE :=  device/sony/nicki/manifest.xml
