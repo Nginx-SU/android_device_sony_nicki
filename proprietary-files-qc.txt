@@ -109,9 +109,6 @@ bin/rmt_storage
 # Security
 bin/qseecomd
 lib/libQSEEComAPI.so
-lib/libdrmfs.so
-lib/libdrmtime.so
-lib/libdrmdiag.so
 
 # UI
 vendor/lib/libuiblur.so
@@ -135,11 +132,4 @@ etc/firmware/vidcfw.elf
 etc/firmware/vidc.mdt
 
 # Widevine DRM
-etc/permissions/com.google.widevine.software.drm.xml
--framework/com.google.widevine.software.drm.jar
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/libdrmdecrypt.so
-vendor/lib/libwvdrm_L3.so
-vendor/lib/libwvm.so
-vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/mediadrm/libwvdrmengine.so
