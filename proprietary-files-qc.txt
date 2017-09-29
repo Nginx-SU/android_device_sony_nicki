@@ -116,6 +116,9 @@ lib/libdrmdiag.so
 # UI
 vendor/lib/libuiblur.so
 
+# STLport
+vendor/lib/libstlport.so
+
 # Time services
 -app/TimeService/TimeService.apk
 bin/time_daemon
