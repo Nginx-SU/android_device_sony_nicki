@@ -18,10 +18,11 @@ LOCAL_SHARED_LIBRARIES := \
     libcutils \ 
     libgui \
     libbase \
-    android.hidl.token@1.0-utils
+    android.hidl.token@1.0-utils \
+    android.hardware.graphics.bufferqueue@1.0
 
 LOCAL_STATIC_LIBRARIES := \
-    libarect
+    libarect libbase
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/hw
 LOCAL_MODULE := camera.qcom
