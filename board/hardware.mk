@@ -1,5 +1,5 @@
 # CM Hardware
-BOARD_HARDWARE_CLASS := $(DEVICE_PATH)/cmhw
+BOARD_HARDWARE_CLASS := $(DEVICE_PATH)/lineagehw
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
