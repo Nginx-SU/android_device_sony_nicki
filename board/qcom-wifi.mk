@@ -1,4 +1,5 @@
 # WiFi
+TARGET_WLAN_VARIANT := caf
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_WLAN_DEVICE                := qcwcn
 BOARD_HOSTAPD_DRIVER             := NL80211
