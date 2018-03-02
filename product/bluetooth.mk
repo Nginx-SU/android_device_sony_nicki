@@ -6,7 +6,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     qcom.bluetooth.soc=smd \
     ro.qualcomm.bt.hci_transport=smd
-
-# Bluetooth packages
-PRODUCT_PACKAGES += \
-    libbt-vendor \

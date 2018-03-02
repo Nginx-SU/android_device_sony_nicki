@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
 
 # DRM packages
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
     com.google.widevine.software.drm
 
 # DRM properties
