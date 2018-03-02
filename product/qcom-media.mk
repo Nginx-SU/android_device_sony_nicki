@@ -28,4 +28,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     media.stagefright.legacyencoder=true \
     media.stagefright.less-secure=true \
+    persist.media.treble_omx=false \
     qcom.hw.aac.encoder=true
