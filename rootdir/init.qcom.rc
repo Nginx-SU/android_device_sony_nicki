@@ -359,9 +359,9 @@ service ril-daemon2 /system/bin/rild -c 2
     disabled
     group radio cache inet misc audio sdcard_r sdcard_rw diag qcom_diag log
 
-service charger /sbin/healthd -c
+service charger /charger
     class charger
-    seclabel u:r:healthd:s0
+    seclabel u:r:charger:s0
 
 on charger
     write /sys/module/msm_fb/parameters/align_buffer 0
