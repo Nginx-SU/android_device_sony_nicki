@@ -131,6 +131,9 @@ etc/firmware/vidc.b03
 etc/firmware/vidcfw.elf
 etc/firmware/vidc.mdt
 
+#STLport Library
+vendor/lib/libstlport.so
+
 # Widevine DRM
 etc/permissions/com.google.widevine.software.drm.xml
 -framework/com.google.widevine.software.drm.jar
