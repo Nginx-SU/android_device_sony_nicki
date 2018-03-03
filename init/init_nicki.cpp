@@ -32,11 +32,14 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#include <android-base/properties.h>
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
+#include <android-base/logging.h>
+#include <android-base/properties.h>
+
+using android::init::property_set;
 
 #define MODELNUMBER "/proc/modelnumber"
 #define BUF_SIZE         64
@@ -45,10 +48,6 @@
 static char tmp[BUF_SIZE];
 
 void ds_properties();
-
-using android::init::property_set;
-
-using android::base::GetProperty;
 
 static int read_file2(const char *fname, char *data, int max_size)
 {
@@ -59,7 +58,7 @@ static int read_file2(const char *fname, char *data, int max_size)
 
     fd = open(fname, O_RDONLY);
     if (fd < 0) {
-	LOG(ERROR) << "failed to open '" << fname << "'\n";
+        LOG(ERROR) << "failed to open" << fname;
         return 0;
     }
 
@@ -109,6 +108,6 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "Sony/C2004/C2004:4.3/15.5.A.1.5/eng.user.20140430.172301:user/release-keys");
     };
 
-    device = GetProperty("ro.product.device", "");
-    LOG(ERROR) << "setting build properties for device'" << device.c_str() << "'\n";
+    device = android::base::GetProperty("ro.product.device", "");
+    LOG(ERROR) << "setting build properties for %s device" << device.c_str();
 }
