@@ -7,7 +7,7 @@ LOCAL_C_INCLUDES := system/core/init external/selinux/libselinux/include
 LOCAL_SRC_FILES := init_nicki.cpp
 LOCAL_MODULE := libinit_nicki
 
-LOCAL_STATIC_LIBRARIES := 
+LOCAL_STATIC_LIBRARIES := \
 	libbase \
 	libselinux
 

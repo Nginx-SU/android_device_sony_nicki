@@ -22,7 +22,8 @@ LOCAL_SHARED_LIBRARIES := \
     android.hardware.graphics.bufferqueue@1.0
 
 LOCAL_STATIC_LIBRARIES := \
-    libarect libbase
+    libarect \ 
+    libbase
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/hw
 LOCAL_MODULE := camera.qcom
