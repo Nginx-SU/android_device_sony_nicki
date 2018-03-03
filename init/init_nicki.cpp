@@ -46,6 +46,8 @@ static char tmp[BUF_SIZE];
 
 void ds_properties();
 
+using android::init::property_set;
+
 using android::base::GetProperty;
 
 static int read_file2(const char *fname, char *data, int max_size)
