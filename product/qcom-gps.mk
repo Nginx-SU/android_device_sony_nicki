@@ -4,8 +4,11 @@ PRODUCT_COPY_FILES += \
 
 # GPS packages
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
     gps.msm8960 \
     gps.conf \
     sap.conf \
     izat.conf
+
+# GPS HIDL interfaces
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
