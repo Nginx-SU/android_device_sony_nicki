@@ -14,3 +14,7 @@ PRODUCT_PACKAGES += \
 # NFC FW
 PRODUCT_PACKAGES += \
     libpn544_fw
+
+# NFC HAL
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0-impl
