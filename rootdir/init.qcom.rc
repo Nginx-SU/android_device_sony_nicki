@@ -391,3 +391,8 @@ on property:service.adb.root=1
 
 on property:vold.decrypt=trigger_restart_min_framework
     start time_daemon
+
+service logcat /system/bin/logcat -f /data/misc/logd/logcat.txt
+    class core
+    user root
+    group root
