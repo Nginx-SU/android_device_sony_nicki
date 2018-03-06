@@ -77,7 +77,6 @@ lib/libmm-audio-resampler.so
 lib/libmm-color-convertor.so
 
 # Perf
-bin/mpdecision
 vendor/lib/libqti-perfd-client.so
 
 # QMI
