@@ -17,7 +17,7 @@
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-PRODUCT_AAPT_PREBUILT_DPI := hdpi tvdpi mdpi ldpi
+PRODUCT_AAPT_PREBUILT_DPI := hdpi
 
 # Device specific overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
