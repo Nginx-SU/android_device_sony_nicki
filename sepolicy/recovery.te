@@ -1,9 +1,0 @@
-allow recovery selinuxfs:file { write };
-allow recovery kernel:security { setenforce };
-allow recovery graphics_device:chr_file { ioctl };
-allow recovery vold_data_file:dir { search };
-allow recovery vold_data_file:file { getattr read open };
-allow recovery dm_device:chr_file { ioctl read write open };
-allow recovery block_device:blk_file { ioctl read open };
-allow recovery media_rw_data_file:dir { read open };
-
